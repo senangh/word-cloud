@@ -1,0 +1,49 @@
+/* Basic page styling */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for font dropdown and sliders */
+.controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.dropdown {
+  margin-bottom: 10px;
+}
+
+.sliders label {
+  display: block;
+  margin-top: 10px;
+}
+
+#wordCloud {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+/* Font style classes */
+.open-sans-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}

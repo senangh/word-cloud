@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Cloud with Font Selection and Sliders</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script> <!-- D3.js library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script> <!-- D3-cloud library -->
+
+  <!-- Google Fonts Links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!-- Make sure to use type="module" -->
+  <script type="module" defer src="script.js"></script>
+</head>
+<body>
+  <div class="controls">
+    <div class="dropdown">
+      <label for="fontSelector">Choose Font:</label>
+      <select id="fontSelector">
+        <option value="open-sans-regular">Open Sans</option>
+        <option value="montserrat-regular">Montserrat</option>
+      </select>
+    </div>
+
+    <div class="sliders">
+      <label for="slider1">OOH to DOOH</label>
+      <input type="range" id="slider1" min="0" max="4" step="1">
+
+      <label for="slider2">Inclusive to Exclusive</label>
+      <input type="range" id="slider2" min="0" max="4" step="1">
+
+      <label for="slider3">Brand Driven to Initiative Driven</label>
+      <input type="range" id="slider3" min="0" max="4" step="1">
+    </div>
+  </div>
+
+  <div id="wordCloud" class="open-sans-regular">This is the word cloud container.</div> <!-- Word cloud container -->
+</body>
+</html>
